@@ -5,8 +5,6 @@
 		<title>Guessing Game!</title>
 		<!-- Bootstrap -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 		<!-- Custom -->
 		<link rel="stylesheet" type="text/css" href="guess.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,25 +16,30 @@
 		<div class="container" class= "row">
 			<section id="home" class= "jumbotron">
 				<h1>Welcome To the Guessing Game!</h1>
-				<div id="outside">
-					<div id="inside">
 						<div id="directions" class="lead">
 							Guess a number between 1 &amp; 100:
 						</div>
+
 						<input type="text" name="input_box" placeholder="Enter #: 1-100" id="input_box">
-						<div id="directions">Hotter or Colder</div>
 						<input type="submit" value="Submit" id="submit">
-					</div>
-				</div>
-				<div id="remainder">Number of Guesses remaining.</div>
-				<p class= "btn-group">
-					<a id="hint" class="btn btn-success" href="#">Hint?</a>
-					<a id="replay" class= "btn btn-success" href="#">Try Again!</a>
-				</p>
+
+						<div id="remainder">Number of Guesses remaining.</div>
+						<div id="directions">Hotter or Colder</div>
+						<div id="user-guesses">
+      					<p>Don't guess any of these:<br></p>
+      					<div id="archive"></div>
+				
+					<p class= "btn-group">
+						<a id="hint" class="btn btn-success" href="#">Hint?</a>
+						<a id="replay" class= "btn btn-success" href="#">Try Again!</a>
+					</p>
 			</section>
 			<footer>
 				<p>&copy; 2014 Emmie S.</p>
 			</footer>
 		</div>
+	<!-- JQuery -->
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="guess.js" type="text/javascript" charset="utf-8"></script>
 	</body>
 </html>
